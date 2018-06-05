@@ -1,0 +1,132 @@
+#nav-bar {
+    padding-top: 1.2%;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 5px 0 10px 6px;
+    width: 100%;
+}
+
+.logo {
+    height: 3em;
+    width: auto;
+    align-self: center;
+}
+
+#header-img {
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+#logo2 {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#company {
+    flex: 1;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #d6320c;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: black;
+    align-self: center;
+    float: right;
+}
+
+body {
+    background: #c9c9c9;
+    padding-top: 1.2%;
+    text-align: justify;
+}
+
+p {
+    font-size: 20px;
+}
+
+.row {
+    padding: 3% 0 3% 0;
+}
+
+#about, #features {
+    padding-top: 70px;
+}
+
+i {
+    font-size: 460%;
+    color: #d6320c;
+}
+
+h2, h3 {
+    color: #9e371f;
+}
+
+#grid-container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 100px 90%;
+    grid-template-rows: 75px;
+    grid-gap: 50px 0px;
+}
+
+#grid-container span {
+    font-size: 25px;
+    align-self: center;
+    padding-left: 10%;
+}
+
+.btn {
+    color: white;
+    background-color: #d6320c;
+}
+
+.btn:hover {
+    background-color: #e04c2a;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    #company {
+        flex: 0;
+        text-align: center;
+    }
+
+    #about, #features, #contact {
+        padding-top: 250px;
+    }
+
+    #grid-container {
+        margin-top: 15%;
+        grid-template-columns:0px 90%;
+    }
+
+    i {
+        font-size: 0px;
+    }
+
+    .description {
+        justify-content: center;
+        text-align: center;
+    }
+}
